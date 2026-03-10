@@ -1,4 +1,7 @@
 const { Router } = require("express");
+
+const authMiddleware = require("../middlewares/authMiddlewares");
+
 const {
   createOrderControllerFactory,
 } = require("@useCases/order/createOrder/index");
@@ -16,7 +19,7 @@ const {
 } = require("@useCases/order/deleteOrder/index");
 
 const orderRouter = Router();
-
+orderRouter.use(authMiddleware);
 /**
  * @swagger
  * components:
