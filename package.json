@@ -1,0 +1,46 @@
+{
+  "name": "jitterbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "_moduleAliases": {
+    "@routes": "src/routes",
+    "@entities": "src/entities",
+    "@repositories": "src/repositories",
+    "@database": "src/database",
+    "@config": "src/config",
+    "@useCases": "src/useCases",
+    "@mappers": "src/mappers"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuscooper/Jitterbit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheuscooper/Jitterbit/issues"
+  },
+  "homepage": "https://github.com/matheuscooper/Jitterbit#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.1",
+    "express": "^5.2.1",
+    "module-alias": "^2.3.4",
+    "pg": "^8.20.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.9",
+    "nodemon": "^3.1.14"
+  }
+}

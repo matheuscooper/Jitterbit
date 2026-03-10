@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@entities/*": ["entities/*"],
+      "@repositories/*": ["repositories/*"],
+      "@database/*": ["database/*"],
+      "@useCases/*": ["useCases/*"],
+      "@controllers/*": ["controllers/*"],
+      "@routes/*": ["routes/*"],
+      "@config/*": ["config/*"],
+      "@mappers/*": ["mappers/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
